@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/mainBackground"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundGray"
+    tools:context=".SplashActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width= "match_parent"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/homeToolbar"
+
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+
+
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="16dp"
+        android:layout_below="@id/homeToolbar"
+        android:id="@+id/mainScreenWrapper">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fullnameLabel"
+            android:textColor="@color/themeBlue"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="@dimen/rounded_corners_size"
+            android:textSize="24sp"
+            android:layout_alignParentTop="true"
+            android:text="@string/fullname_textview"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fullnameLabel"
+            android:layout_marginBottom="8dp"
+            android:textSize="30sp"
+            android:paddingLeft="@dimen/rounded_corners_size"
+            android:id="@+id/fullnameEditText"
+            android:textColorHint="@color/white"
+            android:hint="@string/name_hint"
+            android:background="@drawable/edittext_rounded_corner"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cernerIdLabel"
+            android:textColor="@color/themeBlue"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="@dimen/rounded_corners_size"
+            android:textSize="24sp"
+            android:layout_below="@id/fullnameEditText"
+            android:text="@string/cernerid"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cernerIdLabel"
+            android:layout_marginBottom="16dp"
+            android:textSize="30sp"
+            android:paddingStart="@dimen/rounded_corners_size"
+            android:id="@+id/cernerIdEditText"
+            android:background="@drawable/edittext_rounded_corner"/>
+
+
+
+
+
+        <Button
+            android:id="@+id/startTeamButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_button_background"
+            android:text="@string/add_user_text"
+            android:textSize="24sp"
+            android:padding="8dp"
+            android:layout_marginTop="24dp"
+            android:textColor="@color/backgroundGray"
+            android:layout_below="@id/cernerIdEditText"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

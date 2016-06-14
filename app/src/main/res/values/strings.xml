@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">HealtheBeacon</string>
+    <string name="fullname_textview">FULL NAME</string>
+    <string name="name_hint">John Smith</string>
+    <string name="cernerid">CERNER ID</string>
+    <string name="text_id_explan">Your text ID can be found on your badge</string>
+    <string name="team">TEAM</string>
+    <string name="add_user_text">ADD USER</string>
+
+
+    <string name="team_name_1">WH-DEV</string>
+    <string name="team_name_2">HI-REGISTRY</string>
+    <string name="team_name_3">HI-ANALYTICS</string>
+    <string name="pick_team">SELECT YOUR TEAM</string>
+    pick_team
+
+    <array name="mock_team_names">
+        <item>@string/team_name_1</item>
+        <item>@string/team_name_2</item>
+        <item>@string/team_name_3</item>
+    </array>
+</resources>
